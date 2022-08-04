@@ -1,0 +1,96 @@
+{
+    "CPP_basic_template": {
+        "scope": "cpp",
+        "prefix": "cpp-basic",
+        "body": [
+            "#include <iostream>",
+            "// Other libraries",
+            "",
+            "using namespace std;",
+            "",
+            "// Function declaration",
+            "",
+            "int main() {",
+            "\t$0",
+            "}",
+            "",
+            " // Function definition"
+        ],
+        "description": "Basic structure for C++ with 'main' function"
+    },
+    "CPP_variables": {
+        "scope": "cpp",
+        "prefix": "var-cpp",
+        "body": "${1:/*type*/} ${2:/*name*/} = ${3:/*value*/};",
+        "description": "Variable structure."
+    },
+    "CPP_conditional_operator": {
+        "scope": "cpp",
+        "prefix": "cond_op-cpp",
+        "body": "(${1:/*BOOLEAN CONDITION*/} ? ${2:/*True*/} : ${3:/*False*/});",
+        "description": "Conditional operator structure."
+    },
+    "CPP_if_conditional": {
+        "scope": "cpp",
+        "prefix": "if-cpp",
+        "body": [
+            "if (${1:/*BOOLEAN CONDITION*/}) {",
+            "\t${2:/*This code will be executed only if the condition is true*/}",
+            "}",
+            "else if (${3:/*BOOLEAN CONDITION (Just in case the condition immediately before isn't true)*/}) {",
+            "\t${4:/*This code will be executed only if the condition is true*/}",
+            "}",
+            "else {",
+            "\t${5:/*This code will be executed only if none of the conditions above is true*/}",
+            "}"
+        ],
+        "description": "If structure."
+    },
+    "CPP_while_loop": {
+        "scope": "cpp",
+        "prefix": "while-cpp",
+        "body": [
+            "while (${1:/*BOOLEAN CONDITION. If true, repeat*/}) {",
+            "\t${2:/*This code will be repeated until the condition is false*/}",
+            "}"
+        ],
+        "description": "While loop structure."
+    },
+    "CPP_do_while_loop": {
+        "scope": "cpp",
+        "prefix": "do_while-cpp",
+        "body": [
+            "do {",
+            "\t${2:/*This code will be repeated until the condition is false*/}",
+            "} while (${1:/*BOOLEAN CONDITION. If true, repeat*/});",
+        ],
+        "description": "Do-While loop structure."
+    },
+    "CPP_for_loop": {
+        "scope": "cpp",
+        "prefix": "for-cpp",
+        "body": [
+            "for (${1:/*Declaration of iterator*/}; ${2:/*BOOLEAN CONDITION. If true, repeat*/}; ${3:/*Iterator modifier*/}) {",
+            "\t${2:/*This code will be repeated until the condition is false*/}",
+            "}"
+        ],
+        "description": "For loop structure."
+    },
+    "CPP_array": {
+        "scope": "cpp",
+        "prefix": "array-cpp",
+        "body": "${1:/*type*/} ${2:/*name*/}[${3:/*size*/}] = {${4:/*Element1*/},${5:/*Element2...*/}};",
+        "description": "Array structure."
+    },
+    "CPP_function": {
+        "scope": "cpp",
+        "prefix": "function-cpp",
+        "body": [
+            "${1:/*type*/} ${2:/*name*/}(${3:/*parameters (type name, ...)*/}){",
+            "\t${4:/*Function code*/}",
+            "\t${5:return ;}// erase this line if function is 'void'",
+            "}"
+        ],
+        "description": "Function structure."
+    },
+}

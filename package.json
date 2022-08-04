@@ -1,0 +1,20 @@
+{
+  "name": "langsyntax",
+  "displayName": "LangSyntax",
+  "description": "An extension that helps you with the structure syntax",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "cpp",
+        "path": "./snippets/cpp.code-snippets"
+      }
+    ]
+  }
+}
