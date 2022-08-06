@@ -3,6 +3,7 @@
   "displayName": "LangSyntax",
   "description": "An extension that helps you with the structure syntax",
   "version": "1.0.0",
+  "publisher": "pablo-uribe",
   "engines": {
     "vscode": "^1.70.0"
   },
