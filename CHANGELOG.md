@@ -10,3 +10,6 @@ All notable changes to the "langsyntax" extension will be documented in this fil
 - v1.1.0
   - Added logo
   - Changed compatibility version
+- v1.2.0
+  - Changed language to spanish
+  - added explanations for usage

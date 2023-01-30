@@ -4,93 +4,96 @@
         "prefix": "cpp-basic",
         "body": [
             "#include <iostream>",
-            "// Other libraries",
+            "",
+            "// Otras librerias",
             "",
             "using namespace std;",
             "",
-            "// Function declaration",
+            "// Declarar funciones:",
+            "// <Tipo de dato> <nombre>(<Param1>, <Param2>, ...);",
             "",
             "int main() {",
             "\t$0",
             "}",
             "",
-            " // Function definition"
+            "// Definir funciones:",
+            "// <Tipo de dato> <nombre>(<Param1>, <Param2>, ...){}"
         ],
-        "description": "Basic structure for C++ with 'main' function"
+        "description": "Estructura basica C++"
     },
     "CPP_variables": {
         "scope": "cpp",
-        "prefix": "var-cpp",
-        "body": "${1:/*type*/} ${2:/*name*/} = ${3:/*value*/};",
-        "description": "Variable structure."
+        "prefix": "cpp-var",
+        "body": "${1:/*tipo de dato*/} ${2:/*nombre*/} = ${3:/*valor*/};",
+        "description": "Estructura de variable."
     },
     "CPP_conditional_operator": {
         "scope": "cpp",
-        "prefix": "cond_op-cpp",
-        "body": "(${1:/*BOOLEAN CONDITION*/} ? ${2:/*True*/} : ${3:/*False*/});",
-        "description": "Conditional operator structure."
+        "prefix": "cpp-operador_ternario",
+        "body": "(${1:/*Condicion (valor booleano)*/} ? ${2:/*es verdadero*/} : ${3:/*es falso*/});",
+        "description": "Estructura del operador ternario."
     },
     "CPP_if_conditional": {
         "scope": "cpp",
-        "prefix": "if-cpp",
+        "prefix": "cpp-if",
         "body": [
-            "if (${1:/*BOOLEAN CONDITION*/}) {",
-            "\t${2:/*This code will be executed only if the condition is true*/}",
+            "if (${1:/*Condicion (valor booleano)*/}) {",
+            "\t${2:/*Instrucciones a ejecutar si la condicion es verdadera*/}",
             "}",
-            "else if (${3:/*BOOLEAN CONDITION (Just in case the condition immediately before isn't true)*/}) {",
-            "\t${4:/*This code will be executed only if the condition is true*/}",
+            "else if (${3:/*Condicion (valor booleano)*/}) {",
+            "\t${4:/*Instrucciones a ejecutar si la condicion inmediatamente anterior es falsa y la actual es verdadera*/}",
             "}",
             "else {",
-            "\t${5:/*This code will be executed only if none of the conditions above is true*/}",
+            "\t${5:/*Instrucciones a ejecutar si ninguna de las condiciones anteriores se cumplieron*/}",
             "}"
         ],
-        "description": "If structure."
+        "description": "Estructura del condicional if."
     },
     "CPP_while_loop": {
         "scope": "cpp",
-        "prefix": "while-cpp",
+        "prefix": "cpp-while",
         "body": [
-            "while (${1:/*BOOLEAN CONDITION. If true, repeat*/}) {",
-            "\t${2:/*This code will be repeated until the condition is false*/}",
+            "while (${1:/*Condicion (valor booleano)*/}) {",
+            "\t${2:/*Instrucciones a ejecutar y repetir mientras la condicion sea verdadera*/}",
             "}"
         ],
-        "description": "While loop structure."
+        "description": "Estructura del ciclo while."
     },
     "CPP_do_while_loop": {
         "scope": "cpp",
-        "prefix": "do_while-cpp",
+        "prefix": "cpp-do_while",
         "body": [
             "do {",
-            "\t${2:/*This code will be repeated until the condition is false*/}",
-            "} while (${1:/*BOOLEAN CONDITION. If true, repeat*/});",
+            "\t${2:/*Instrucciones a ejecutar y repetir mientras la condicion sea verdadera*/}",
+            "} while (${1:/*Condicion (valor booleano)*/});",
         ],
-        "description": "Do-While loop structure."
+        "description": "Estructura del ciclo Do-While."
     },
     "CPP_for_loop": {
         "scope": "cpp",
-        "prefix": "for-cpp",
+        "prefix": "cpp-for",
         "body": [
-            "for (${1:/*Declaration of iterator*/}; ${2:/*BOOLEAN CONDITION. If true, repeat*/}; ${3:/*Iterator modifier*/}) {",
-            "\t${2:/*This code will be repeated until the condition is false*/}",
+            "for (${1:/*Declaracion de variable iteradora*/}; ${2:/*Condicion (valor booleano)*/}; ${3:/*Modificacion del iterador*/}) {",
+            "\t${4:/*Instrucciones a ejecutar y repetir mientras la condicion sea verdadera*/}",
             "}"
         ],
-        "description": "For loop structure."
+        "description": "Estructura del ciclo For."
     },
     "CPP_array": {
         "scope": "cpp",
-        "prefix": "array-cpp",
-        "body": "${1:/*type*/} ${2:/*name*/}[${3:/*size*/}] = {${4:/*Element1*/},${5:/*Element2...*/}};",
-        "description": "Array structure."
+        "prefix": "cpp-arreglo",
+        "body": "${1:/*tipo de dato*/} ${2:/*nombre*/}[${3:/*tamaño*/}] = {${4:/*Elemento1*/},${5:/*Elemento2...*/}};",
+        "description": "Estructura del Arreglo."
     },
     "CPP_function": {
         "scope": "cpp",
-        "prefix": "function-cpp",
+        "prefix": "cpp-funcion",
         "body": [
-            "${1:/*type*/} ${2:/*name*/}(${3:/*parameters (type name, ...)*/}){",
-            "\t${4:/*Function code*/}",
-            "\t${5:return ;}// erase this line if function is 'void'",
+            "${1:/*tipo de dato*/} ${2:/*nombre*/}(${3:/*parametros (<tipo de dato> <nombre>, ...)*/}){",
+            "\t${4:/*Instrucciones a ejecutar*/}",
+            "\t${5:return ;}// Borrar esta linea si la funcion es 'void'",
             "}"
         ],
-        "description": "Function structure."
+        "description": "Estructura de la funcion."
     },
 }

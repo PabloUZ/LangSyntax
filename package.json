@@ -3,7 +3,7 @@
   "icon": "images/logo.png",
   "displayName": "LangSyntax",
   "description": "An extension that helps you with the structure syntax",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publisher": "pablo-uribe",
   "repository": {
     "type": "git",
